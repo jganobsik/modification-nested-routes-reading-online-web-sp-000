@@ -39,7 +39,7 @@ end
 
   private
 
-  def post_params
-    params.require(:post).permit(:title, :description)
-  end
+def post_params
+  params.require(:post).permit(:title, :description, :author_id)
+end
 end
